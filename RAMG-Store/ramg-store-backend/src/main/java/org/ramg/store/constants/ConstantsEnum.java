@@ -5,8 +5,8 @@ import lombok.Getter;
 @Getter
 public enum ConstantsEnum {
 
-    USER_NOT_EXISTS("User Not exists with the given Id: ");
-
+    USER_NOT_EXISTS("User Not exists with the given Id: "),
+    PRODUCT_NOT_EXISTS("Product Not exists with the given Id: ");
     private final String value;
 
     ConstantsEnum(String value) {
