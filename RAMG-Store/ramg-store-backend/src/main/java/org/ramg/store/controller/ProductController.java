@@ -10,7 +10,7 @@ import java.util.List;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping(value = "/api/product")
+@RequestMapping(value = "/api/products")
 public class ProductController {
     @Autowired
     private ProductService productService;
@@ -29,7 +29,6 @@ public class ProductController {
         return new ResponseEntity<>(productDto, HttpStatus.OK);
     }
 
-
     @GetMapping()
     public ResponseEntity<List<ProductDto>> getAllProducts(){
         List<ProductDto> products = productService.getAllProducts();
@@ -47,5 +46,6 @@ public class ProductController {
         ProductDto productDto = productService.updateProduct(productId, updatedProduct);
         return new ResponseEntity<>(productDto, HttpStatus.OK);
     }
+
 
 }

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { listUsers, deleteUser } from '../Services/UserService'
+import { listUsers, deleteUser } from '../services/UserService'
 import { useNavigate } from 'react-router-dom'
 
 
